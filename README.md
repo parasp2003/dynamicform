@@ -6,7 +6,7 @@ Create Dynamic Web Forms Without Coding
 Dynamic form develop using laravel 7.30.6  
  
 ### Premium Partners
- yajrabox
+ yajrabox,
  Jquery
  
 
