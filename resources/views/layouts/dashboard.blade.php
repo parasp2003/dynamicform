@@ -11,8 +11,14 @@
           <div class="sidebar " id="navbarSidebar">
             <ul class="nav flex-column">
                <li class="nav-item">
-                <a class="nav-link" href="{{  route('addForm')  }}">
+                <a class="nav-link" href="{{  route('form')  }}">
                   <span data-feather="layers"></span>
+                  Froms
+                </a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="{{  route('addForm')  }}">
+                  <span data-feather="plus-circle"></span>
                   Froms
                 </a>
               </li>

@@ -2,18 +2,24 @@
 @section('content')
 <div class="container-fluid">
   <div class="row">
-    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+     <nav class="col-md-2 d-none d-md-block bg-light sidebar">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSidebar" aria-controls="navbarSidebar" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
       <span class="navbar-toggler-icon"></span>
       </button>
       <div class="sidebar " id="navbarSidebar">
         <ul class="nav flex-column">
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="{{  route('form')  }}">
               <span data-feather="layers"></span>
               Froms
             </a>
           </li>
+           <li class="nav-item">
+              <a class="nav-link" href="{{  route('addForm')  }}">
+                <span data-feather="plus-circle"></span>
+                Add Froms
+              </a>
+            </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
               <span data-feather="bar-chart-2"></span>
@@ -88,8 +94,7 @@
           </table>
           <button type="submit" class="btn btn-success text-center">Save</button>
         </form>
-      </div>
-    </body>
+
   </div>
 </main>
 </div>

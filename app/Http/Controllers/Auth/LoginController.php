@@ -39,7 +39,7 @@ class LoginController extends Controller {
 	protected function authenticated(Request $request, $user) {
 		// to admin dashboard
 		if ($user->isAdmin()) {
-			return redirect(route('admin_dashboard'));
+			return redirect(route('home'));
 		}
 
 		// to user dashboard

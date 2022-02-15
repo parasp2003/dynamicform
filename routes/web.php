@@ -22,10 +22,13 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 //admin routes
-Route::group(['middleware' => ['auth', 'admin'], 'prefix' => 'admin'], function () {
+Route::group(['middleware' => ['auth'], 'prefix' => 'admin'], function () {
 
 	Route::get("addform", "FormController@addForm")->name('addForm');
 	Route::post("addFromField", "FormController@addFromField")->name('addFromField');
+
+	Route::get('form', "FormController@index")->name('form');
+	Route::get('form/list', "FormController@fromList")->name('form.list');
 
 });
 
